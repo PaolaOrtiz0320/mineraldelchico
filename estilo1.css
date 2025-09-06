@@ -1,0 +1,829 @@
+/* Definición de variables en :root */
+:root {
+    --main-font: 'Times New Roman', Times, serif, sans-serif;
+    --primary-color: #22640c;
+    --secondary-color: #22640c;
+    --button-color: rgba(88, 104, 74, 0.938);
+    --text-color: #fff;
+    --font-size-base: 16px;
+    --button-radius: 20px;
+}
+
+/* Estilos generales */
+body {
+    font-family: var(--main-font);
+    margin: 0;
+    padding: 0;
+    font-size: var(--font-size-base);
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#barra{
+    font-family:'Times New Roman', Times, serif;
+    font-size:18px;
+}
+
+/* Estilos para la barra de navegación */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilos para el contenedor del título con imagen */
+.title-with-image {
+    display: flex;
+    align-items: center;
+}
+
+.title-with-image img {
+    margin-right: 10px;
+}
+
+/* Estilos para el contenedor del carrusel */
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 700%;
+    height: auto;
+    background-color: #9bce84;
+}
+
+/* Estilos para el carrusel */
+.carousel {
+    transition: transform 0.3s ease;
+    height: 380px;
+}
+
+.carousel-btn {
+    background-color: #207918;
+    border-top-left-radius: 0cm;
+    color: rgb(252, 255, 254);
+    padding: 10px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.carousel-item {
+    min-width: 80%;
+    height: 60%;
+    position: relative;
+}
+
+.carousel-item img {
+    width: 60%;
+    height: 80%;
+    object-fit: cover;
+}
+
+/* Estilos para las flechas de navegación del carrusel */
+.carousel-arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.arrow {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Estilos para el botón de continuar */
+
+.carousel-btn:hover{
+    background-color: var(--secondary-color);
+}
+
+/* Estilos para turismo y gastronomía, cultura */
+.cultura,
+.gastronomia,
+.turismo {
+    width: 100%;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.cultura h2,
+.gastronomia h2,
+.turismo h2 {
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.cultura .imagenes,
+.gastronomia .imagenes,
+.turismo .imagenes {
+    margin-bottom: 20px;
+}
+
+.cultura .descripcion,
+.gastronomia .descripcion,
+.turismo .descripcion {
+    width: 100%;
+}
+
+.cultura p,
+.gastronomia p,
+.turismo p {
+    text-align: justify;
+}
+
+/* Media queries para pantallas más pequeñas */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        font-size: 20px;
+        background-color: var(--primary-color);
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+
+nav ul li a {
+    color: #fff;
+    /* Color del texto */
+    text-decoration: none;
+    /* Sin decoración de texto */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    /* Subraya al pasar el ratón */
+}
+
+
+.contact-text {
+    display: inline-block;
+    /* Permite que el texto se envuelva alrededor de la imagen */
+}
+
+p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+/* Estilos para la imagen en la etiqueta p1 */
+.p1 {
+    background-image: url('img/correo1.png');
+    /* Ruta de la imagen */
+    
+}
+
+/* Estilos para la imagen en la etiqueta p1 */
+.p12 {
+    background-image: url('img/telefono.png');
+    /* Ruta de la imagen */
+}
+
+/* Estilos para la imagen en la etiqueta p2 */
+.p2 {
+    background-image: url('img/ubicacion2.png');
+    /* Ruta de la imagen */
+}
+
+/* Estilos para la imagen en la etiqueta p3 */
+.p3 {
+    background-image: url('img/escu1.png');
+    /* Ruta de la imagen */
+}
+
+
+.p6{
+    color:#fff;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+.p7{
+    color:#fff;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+
+}
+
+.p8{
+    color:#fff;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+
+}
+
+#hecho {
+    text-align: center;
+}
+
+.carousel-container {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.carousel {
+    width: 300%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+/* Estilos para las flechas del carrusel */
+.arrow {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.arrow-left::before,
+.arrow-left::after,
+.arrow-right::before,
+.arrow-right::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.arrow-left::before,
+.arrow-right::before {
+    left: 25%;
+}
+
+.arrow-right::after {
+    right: 25%;
+}
+
+.arrow-left::after {
+    left: 25%;
+}
+
+
+#img1{
+    width: 800px;
+    height: 300px;
+}
+
+#img2{
+    width: 800px;
+    height: 300px;
+}
+
+#img3{
+    width: 800px;
+    height: 300px;
+}
+
+#img4{
+    width: 800px;
+    height: 300px;
+}
+
+#img5{
+    width: 800px;
+    height: 300px;
+}
+
+
+/* Estilos para el mapa */
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 80%; /* Ajusta el ancho del contenedor del mapa */
+}
+
+/* Estilos para el título del mapa */
+.mapa1 h2 {
+    text-align: center;
+    color: #22640c;
+}
+
+/* Estilos para el mapa */
+#map {
+    width: 80%; /* Asegura que el mapa ocupe todo el ancho del contenedor del mapa */
+    height: 400px; /* Aumenta la altura del mapa */
+}
+
+
+.emergency-contacts {
+    background-color: #22640c;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 60px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    font-size: 18px; /* Ajustar el tamaño de la letra de los contactos */
+}
+
+
+
+/* Estilos para el texto debajo del carrusel */
+.text-below-carousel {
+    width: 25%;
+    /* Establece el ancho del texto al 25% del contenedor principal */
+    float: left;
+    /* Flota el texto a la izquierda */
+    margin-top: 20px;
+    /* Espacio superior */
+    text-align: justify;
+    /* Alinea el texto al centro */
+}
+
+/* Asegúrate de que las imágenes redondas ocupen todo el ancho de la página */
+.image-links img {
+    width: 100%; /* Esto hace que las imágenes ocupen todo el ancho de su contenedor */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    border-radius: 60%; /* Hace las imágenes redondas */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor completamente */
+}
+
+/* Asegúrate de que el contenedor de las imágenes también ocupe todo el ancho disponible */
+.image-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra las imágenes en la página */
+    gap: 10px; /* Espacio entre las imágenes */
+}
+
+.image-links a {
+    flex: 1 1 calc(33.333% - 20px); /* Ajusta este valor según el número de imágenes y el espacio deseado entre ellas */
+    box-sizing: border-box; /* Incluye el padding y el border en el cálculo del ancho del elemento */
+}
+
+#img6{
+    width: 300px;
+    height: 200px;
+}
+
+#img7{
+    width: 300px;
+    height: 200px;
+}
+
+#img8{
+    width: 300px;
+    height: 200px;
+}
+
+@media (max-width: 768px) {
+    .image-links a {
+        flex: 1 1 calc(50% - 20px); /* Ajusta el tamaño en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .image-links a {
+        flex: 1 1 100%; /* En pantallas muy pequeñas, cada imagen ocupa el 100% del ancho */
+    }
+}
+
+
+
+/* Estilos para el pie de página */
+footer {
+    background-color:  #22640c;
+    /* Color de fondo */
+    color: #fff;
+    /* Color del texto */
+    text-align: center;
+    /* Alineación del texto al centro */
+    padding: 20px 0;
+    /* Espaciado interno superior e inferior */
+    width: 100%;
+    /* Ancho completo */
+    font-size: 12px;
+    /* Tamaño de fuente */
+    list-style-type: none;
+    /* Elimina los puntos de la lista */
+    align-content: center;
+}
+
+.footer-column p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+/* Estilos para el contenedor del título con imagen */
+.title-with-image {
+    display: flex;
+    /* Utiliza flexbox */
+    align-items: center;
+    /* Alinea los elementos verticalmente */
+}
+
+.title-with-image img {
+    width: 40px;
+    /* Ancho de la imagen */
+    height: 40px;
+    /* Altura de la imagen */
+    margin-right: 20px;
+    /* Margen derecho */
+}
+
+/* Estilos para el logotipo de actividades */
+.activities-logo {
+    max-width: 40px;
+    /* Ancho máximo */
+    height: auto;
+    /* Altura automática */
+    margin-left: 5px;
+    /* Margen izquierdo */
+    vertical-align: middle;
+    /* Alineación vertical */
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+    position: relative;
+    /* Posición relativa */
+    display: inline-block;
+    /* Muestra en línea como un bloque */
+}
+
+.dropdown-content {
+    display: none;
+    /* Oculta el contenido */
+    position: absolute;
+    /* Posición absoluta */
+    background-color: #f9f9f9;
+    /* Color de fondo */
+    min-width: 160px;
+    /* Ancho mínimo */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /* Sombra */
+    z-index: 1;
+    /* Z-index */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    /* Muestra el contenido al pasar el ratón */
+}
+
+.dropdown-content a {
+    color: black;
+    /* Color del texto */
+    padding: 12px 16px;
+    /* Espaciado interno */
+    text-decoration: none;
+    /* Sin decoración de texto */
+    display: block;
+    /* Muestra como bloque */
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    /* Color de fondo al pasar el ratón */
+}
+
+
+/* Establece un tamaño específico para las imágenes de turismo y gastronomía */
+.image-container img {
+    width: 200px;
+    /* Tamaño deseado */
+    height: 200px;
+    /* Tamaño deseado */
+    justify-content: center;
+    /* Centra horizontalmente el contenido */
+
+}
+
+.imagenes {
+    width: 600px;
+    /* Ancho deseado */
+    margin: 0 auto;
+    /* Centra horizontalmente */
+}
+
+.historia {
+    width: 80%;
+    /* Ancho deseado */
+    margin: 0 auto 40px;
+    /* Centra horizontalmente y agrega espacio abajo */
+    text-align: center;
+    /* Centra el contenido horizontalmente */
+}
+
+.historia h2 {
+    text-align: center;
+    /* Centra horizontalmente el título */
+    color: #22640c;
+
+}
+
+.historia .imagenes {
+    margin-bottom: 20px;
+    /* Agrega espacio abajo de las imágenes */
+}
+
+.historia .descripcion {
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+}
+
+.historia p {
+    text-align: justify;
+    /* Justifica el texto */
+}
+
+
+
+.turismo {
+    width: 80%;
+    /* Ancho deseado */
+    margin: 0 auto 40px;
+    /* Centra horizontalmente y agrega espacio abajo */
+    text-align: center;
+    /* Centra el contenido horizontalmente */
+}
+
+.turismo h2 {
+    text-align: center;
+    /* Centra horizontalmente el título */
+    color: #22640c;
+
+}
+
+.turismo .imagenes {
+    margin-bottom: 20px;
+    /* Agrega espacio abajo de las imágenes */
+}
+
+.turismo .descripcion {
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+}
+
+.turismo p {
+    text-align: justify;
+    /* Justifica el texto */
+}
+
+
+
+.cultura {
+    width: 80%;
+    /* Ancho deseado */
+    margin: 0 auto 40px;
+    /* Centra horizontalmente y agrega espacio abajo */
+    text-align: center;
+    /* Centra el contenido horizontalmente */
+}
+
+.cultura h2 {
+    text-align: center;
+    /* Centra horizontalmente el título */
+    color: #22640c;
+
+}
+
+.cultura .imagenes {
+    margin-bottom: 20px;
+    /* Agrega espacio abajo de las imágenes */
+}
+
+.cultura .descripcion {
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+}
+
+.cultura p {
+    text-align: justify;
+    /* Justifica el texto */
+}
+
+.evento {
+    width: 80%;
+    /* Ancho deseado */
+    margin: 0 auto 40px;
+    /* Centra horizontalmente y agrega espacio abajo */
+    text-align: center;
+    /* Centra el contenido horizontalmente */
+}
+
+.evento h2 {
+    text-align: center;
+    /* Centra horizontalmente el título */
+    color: #22640c;
+
+}
+
+.evento .imagenes {
+    margin-bottom: 20px;
+    /* Agrega espacio abajo de las imágenes */
+}
+
+.evento .descripcion {
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+}
+
+.evento p {
+    text-align: justify;
+    /* Justifica el texto */
+}
+
+
+
+
+.historia {
+    width: 80%;
+    /* Ancho deseado */
+    margin: 0 auto 40px;
+    /* Centra horizontalmente y agrega espacio abajo */
+    text-align: center;
+    /* Centra el contenido horizontalmente */
+}
+
+.historia h2 {
+    text-align: center;
+    /* Centra horizontalmente el título */
+    color: #22640c;
+
+}
+
+.historia .imagenes {
+    margin-bottom: 20px;
+    /* Agrega espacio abajo de las imágenes */
+}
+
+.historia .descripcion {
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+}
+
+.historia p {
+    text-align: justify;
+    /* Justifica el texto */
+}
+
+.gastronomia {
+    width: 80%;
+    /* Ancho deseado */
+    margin: 0 auto 40px;
+    /* Centra horizontalmente y agrega espacio abajo */
+    text-align: center;
+    /* Centra el contenido horizontalmente */
+}
+
+.gastronomia h2 {
+    text-align: center;
+    /* Centra horizontalmente el título */
+    color: #22640c;
+
+}
+
+.gastronomia .imagenes {
+    margin-bottom: 20px;
+    /* Agrega espacio abajo de las imágenes */
+}
+
+.gastronomia .descripcion {
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+}
+
+.gastronomia p {
+    text-align: justify;
+    /* Justifica el texto */
+}
+
+
+
+.tradiciones {
+    width: 80%;
+    /* Ancho deseado */
+    margin: 0 auto 40px;
+    /* Centra horizontalmente y agrega espacio abajo */
+    text-align: center;
+    /* Centra el contenido horizontalmente */
+}
+
+.tradiciones h2 {
+    text-align: center;
+    /* Centra horizontalmente el título */
+    color: #22640c;
+
+}
+
+.tradiciones .imagenes {
+    margin-bottom: 20px;
+    /* Agrega espacio abajo de las imágenes */
+}
+
+.tradiciones .descripcion {
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+}
+
+.tradiciones p {
+    text-align: justify;
+    /* Justifica el texto */
+}
+
+
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+#CR{
+    color:#fff;
+}
+
+/* Establece estilos para los enlaces */
+a {
+    color: inherit;
+    /* Utiliza el color heredado del elemento padre */
+    text-decoration: none;
+    /* Quita la decoración de texto predeterminada */
+}
+
+/* Establece estilos para los enlaces visitados */
+a:visited {
+    color: inherit;
+    /* Utiliza el color heredado del elemento padre */
+}
